@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-RSpec.describe Ffmpeger do
+RSpec.describe FFmpeger do
   it 'has a version number' do
-    expect(Ffmpeger::VERSION).not_to be nil
+    expect(FFmpeger::VERSION).not_to be nil
   end
 end

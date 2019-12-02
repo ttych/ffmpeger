@@ -14,3 +14,15 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+class Sample
+  SAMPLES_DIR = File.join(File.dirname(__FILE__), 'samples')
+
+  def initialize(name)
+    @sample_name = name
+  end
+
+  def get
+    File.read(File.join(SAMPLES_DIR, @sample_name))
+  end
+end

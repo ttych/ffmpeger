@@ -5,13 +5,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'ffmpeger/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'ffmpeger'
-  spec.version       = Ffmpeger::VERSION
+  spec.name          = 'FFmpeger'
+  spec.version       = FFmpeger::VERSION
   spec.authors       = ['Thomas Tych']
   spec.email         = ['thomas.tych@gmail.com']
 
-  spec.summary       = 'ffmpeg wrapper.'
-  spec.description   = 'Juste a ffpmpeg wrapper.'
+  spec.summary       = 'FFmpeg wrapper.'
+  spec.description   = 'Juste a FFpmpeg wrapper.'
   spec.homepage      = 'https://gitlab.com/ttych/ffmpeger'
   spec.license       = 'MIT'
 

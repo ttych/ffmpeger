@@ -17,4 +17,14 @@ RSpec.describe FFmpeger::FFmpeg::FFprobe do
       .and_return(stubbed_version)
     expect(subject.version.to_s).to eq('4.1.3-0ubuntu1')
   end
+
+  it '(ff)probes media file' do
+    stubbed_probe = Sample.new('ffprobe_probe.txt')
+    expected_command = "ffprobe #{described_class::PROBE_OPTIONS} any_file"
+    expect(subject).to receive(:`)
+      .with(expected_command)
+      .once
+      .and_return(stubbed_probe)
+    expect(subject.probe('any_file')).to eq(stubbed_probe)
+  end
 end

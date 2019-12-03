@@ -2,6 +2,7 @@
 
 require 'ffmpeger/version'
 require 'ffmpeger/ffmpeg'
+require 'ffmpeger/media'
 
 module FFmpeger
   class Error < StandardError; end
